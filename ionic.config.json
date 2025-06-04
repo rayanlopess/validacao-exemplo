@@ -1,0 +1,7 @@
+{
+  "name": "validacao",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
