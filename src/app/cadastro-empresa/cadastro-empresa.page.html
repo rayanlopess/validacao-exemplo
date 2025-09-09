@@ -1,0 +1,76 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cadastrar Empresa</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-input 
+        label-placement="floating" 
+        fill="outline"  
+        placeholder="Digite o nome..." 
+        required 
+        [(ngModel)]="nome" 
+        errorText="Preencha os campos corretamente"
+        [class]="class_nome"
+        >
+          <div slot="label">Nome<ion-text color="danger">*</ion-text></div>
+        </ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-input label-placement="floating" 
+        fill="outline" 
+        placeholder="Ex.: xx.xxx.xxx/xxxx-xx" 
+        required 
+        [(ngModel)]="cnpj" 
+        errorText="Preencha os campos corretamente"
+        [class]="class_cnpj"
+        >
+          <div slot="label">CNPJ <ion-text color="danger">*</ion-text></div>
+        </ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-input label-placement="floating" 
+        fill="outline" 
+        placeholder="Ex.: (xx) xxxxx-xxxx" 
+        required 
+        [(ngModel)]="telefone" 
+        errorText="Preencha os campos corretamente"
+        [class]="class_telefone"
+        >
+          <div slot="label">Telefone <ion-text color="danger">*</ion-text></div>
+        </ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-input label-placement="floating" 
+        fill="outline" 
+        placeholder="Ex.: exemplo@exemplo.com" 
+        required 
+        [(ngModel)]="email" 
+        errorText="Preencha os campos corretamente"
+        [class]="class_email"
+        >
+          <div slot="label">E-mail <ion-text color="danger">*</ion-text></div>
+        </ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" (click)="salvar()">Salvar</ion-button>
+      </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+  
+
+
+</ion-content>
